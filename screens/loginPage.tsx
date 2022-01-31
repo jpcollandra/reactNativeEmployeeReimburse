@@ -17,7 +17,7 @@ export function LoginPage(props: { navigation: any , updateUser: Function }) {
       password: password,
     };
 
-    const response = await fetch("http://localhost:3000/login", {
+    const response = await fetch("https://onewalmart.azurewebsites.net/login", {
       method: "PATCH",
       body: JSON.stringify(loginPayload),
       headers: {
